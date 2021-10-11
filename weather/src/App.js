@@ -28,7 +28,7 @@ function App() {
       //Si "consultar" esta como "true" ejecutar el codigo:
       if (consultar) {
         const appId = 'c22b501fe0964dd51a2d2a24f7b98046';
-        const url = `http://api.openweathermap.org/data/2.5/weather?q=${ciudad},${pais}&appid=${appId}`;
+        const url = `https://api.openweathermap.org/data/2.5/weather?q=${ciudad},${pais}&appid=${appId}`;
 
         const respuesta = await fetch(url);
         const resultado = await respuesta.json();
